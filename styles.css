@@ -1,0 +1,15 @@
+.hv {
+    text-align: center;
+}
+
+.titulo {
+    text-align: center;
+    font-family: Arial;
+    color: rgb(246, 252, 249);
+}
+
+header {
+    padding: 40px;
+    margin: auto;
+    background-color: rgb(96, 231, 141);
+}
