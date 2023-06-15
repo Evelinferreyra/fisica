@@ -1,38 +1,37 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conversor de masa</title>
+    <link rel="stylesheet" href="stylemagnitudes.css">
 </head>
 <body>
-    <h1>Conversor de Masa</h1>
-    <label for="magnitud": >Magnitud: </label>
-    <input type="number" id="magnitud">
-    <br>
-    <label for="unidadOrigen">Unidad de Origen: </label>
-    <select  id="unidadOrigen">
-        <option value="kg">kg</option>
-        <option value="hg">hg</option>
-        <option value="dag">dag</option>
-        <option value="g">g</option>
-        <option value="cg">dg</option>
-        <option value="cg">cg</option>
-        <option value="mg">mg</option>
-    </select>
-    <br>
-    <label for="unidadDestino">Unidad de Destino: </label>
-    <select id="unidadDestino">
-        <option value="kg">kg</option>
-        <option value="hg">hg</option>
-        <option value="dag">dag</option>
-        <option value="g">g</option>
-        <option value="cg">dg</option>
-        <option value="cg">cg</option>
-        <option value="mg">mg</option>
-    </select>
-    <br>
-    <button onclick="conventir()">conventir</button>
-    <br>
-    <div id="resultado"></div>
+    <div class="contenedor">
+        <h2>Conversor de unidades de longitud</h2>
+        <div class="fila">
+            <span>Convertir de </span>
+            <select name="unidad1" id="unidad1">
+                <option value="Kilometro">Kilometro</option>
+                <option value="Metro">Metro</option>
+                <option value="Centimetro">Centimetro</option>
+            </select>
+            <span> a </span>
+            <select name="unidad2" id="unidad2">
+                <option value="Kilometro">Kilometro</option>
+                <option value="Metro">Metro</option>
+                <option value="Centimetro">Centimetro</option>
+            </select>
+        </div>
+
+        <input type="number" id="valor" placeholder="Valor">
+
+        <div class="resultado" id="resultado">
+            - -
+        </div>
+        
+    </div>
 
     <script src="masa.js"></script>
 </body>
