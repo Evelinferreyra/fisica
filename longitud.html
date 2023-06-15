@@ -4,15 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Suma</title>
+    <title>Conversor de longitudes</title>
+    <link rel="stylesheet" href="styleslongitud.css">
 </head>
 <body>
-    <h1>Bienvenido Kentucki 2</h1>
-    <p>Ingrese los números que quiera para sumarlos</p>
-    <input type="number" id="num1">
-    <input type="number" id="num2">
-    <button id="botonSumar" onclick = "Sumar()"> Resultado</button>
-    <div id = resultado></div>
+    <div class="contenedor">
+        <h2>Conversor de unidades de longitud</h2>
+        <div class="fila">
+            <span>Convertir de </span>
+            <select name="unidad1" id="unidad1">
+                <option value="Kilometro">Kilometro</option>
+                <option value="Metro">Metro</option>
+                <option value="Centimetro">Centimetro</option>
+            </select>
+            <span> a </span>
+            <select name="unidad2" id="unidad2">
+                <option value="Kilometro">Kilometro</option>
+                <option value="Metro">Metro</option>
+                <option value="Centimetro">Centimetro</option>
+            </select>
+        </div>
+
+        <input type="number" id="valor" placeholder="Valor">
+
+        <div class="resultado" id="resultado">
+            - -
+        </div>
+        
+    </div>
+
     <script src="longitudscript.js"></script>
 </body>
 </html>
