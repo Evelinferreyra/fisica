@@ -1,2 +1,2 @@
 # fisicaqueso
-calculadora de magnitudes :D
+conversor de magnitudes : capacidad,masa y longitud
