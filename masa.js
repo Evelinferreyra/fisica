@@ -23,7 +23,7 @@ function convertir(){
     }
     if (unidad1.value == "Kilogramo" && unidad2.value== "Gramo"){
         resultado = numero * 1000;
-        txtResultado.innerHTML = numero + " Kilometro/s equivalen a " + resultado + "Gramo/s";
+        txtResultado.innerHTML = numero + " Kilogramo/s equivalen a " + resultado + "Gramo/s";
     }
     if (unidad1.value == "Kilogramo" && unidad2.value== "Centigramo"){
         resultado = numero * 10000;
