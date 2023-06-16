@@ -1,15 +1,18 @@
+@import ;
+
 .hv {
     text-align: center;
+    font-family: 'Trebuchet MS';
 }
 
 .titulo {
     text-align: center;
-    font-family: Arial;
+    font-family: 'Trebuchet MS';
     color: rgb(246, 252, 249);
 }
 
 header {
     padding: 40px;
     margin: auto;
-    background-color: rgb(96, 231, 141);
+    background-color: rgb(165, 238, 171);
 }
