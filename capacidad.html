@@ -1,11 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="eS">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CONVERSOR DE MAGNITUDES:CAPACIDAD</title>
+    <link rel="stylesheet" href="stylemagnitudes.css">
 </head>
 <body>
-    <script src="./script.html"></script>
+    <div class="contenedor ">
+        <h2> unidades de volumen</h2>
+        <div class="fila">
+            <span> convertir de </span>
+            <select name="unidad1" id="unidad1">
+                <option value="kilolitro">kilolitro</option>
+                <option value="hectolitro">hectolitro</option>
+                <option value="decalitro">decalitro</option>
+                <option value="litro">litro</option>
+                <option value="decilitro">decilitro</option>
+                <option value="centilitro">centilitro</option>
+                <option value="mililitro">mililitro</option>
+            </select>
+            <span>a</span>
+            <select name="unidad2" id="">
+                <option value="kilolitro">kilolitro</option>
+                <option value="hectolitro">hectolitro</option>
+                <option value="decalitro">decalitro</option>
+                <option value="litro">litro</option>
+                <option value="decilitro">decilitro</option>
+                <option value="centilitro">centilitro</option>
+                <option value="mililitro">mililitro</option>
+            </select>
+        </div>
+        <input type="number" id="a">
+        <div class="resultado" id="resultado"></div>
+    </div>
+    <script src="capacidad.js"></script>   
 </body>
 </html>
