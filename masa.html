@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de masa</title>
+    <link rel="stylesheet" href="stylemagnitudes.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h2>Conversor de unidades de Masa</h2>
+        <div class="fila">
+            <span>Convertir de </span>
+            <select name="unidad1" id="unidad1">
+                <option value="Kilogramo">Kilogramo</option>
+                <option value="Gramo">Gramo</option>
+                <option value="Centigramo">Centigramo</option>
+            </select>
+            <span> a </span>
+            <select name="unidad2" id="unidad2">
+                <option value="Kilogramo">Kilogramo</option>
+                <option value="Gramo">Gramo</option>
+                <option value="Centigramo">Centigramo</option>
+            </select>
+        </div>
+
+        <input type="number" id="valor" placeholder="Valor">
+
+        <div class="resultado" id="resultado">
+            - -
+        </div>
+        
+    </div>
+
+    <script src="masa.js"></script>
+</body>
+</html>
