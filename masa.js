@@ -17,44 +17,44 @@ function convertir(){
     numero = valor.value;
     numero = parseFloat(numero);
 
-    if (unidad1.value == "Kilometro" && unidad2.value== "Kilometro"){
+    if (unidad1.value == "Kilogramo" && unidad2.value== "Kilogramo"){
         resultado = numero * 1;
-        txtResultado.innerHTML = numero + " Kilometros/s equivalen a " + resultado + "Kilometros/s";
+        txtResultado.innerHTML = numero + " Kilogramo/s equivalen a " + resultado + "Kilogramo/s";
     }
-    if (unidad1.value == "Kilometro" && unidad2.value== "Metro"){
+    if (unidad1.value == "Kilogramo" && unidad2.value== "Gramo"){
         resultado = numero * 1000;
-        txtResultado.innerHTML = numero + " Kilometros/s equivalen a " + resultado + "Metro/s";
+        txtResultado.innerHTML = numero + " Kilometro/s equivalen a " + resultado + "Gramo/s";
     }
-    if (unidad1.value == "Kilometro" && unidad2.value== "Centimetro"){
+    if (unidad1.value == "Kilogramo" && unidad2.value== "Centigramo"){
         resultado = numero * 10000;
-        txtResultado.innerHTML = numero + " Kilometros/s equivalen a " + resultado + "Centimetro/s";
+        txtResultado.innerHTML = numero + " Kilogramo/s equivalen a " + resultado + "Centigramo/s";
     }
 
     
-    if (unidad1.value == "Metro" && unidad2.value== "Kilometro"){
+    if (unidad1.value == "Gramo" && unidad2.value== "Kilogramo"){
         resultado = numero / 1;
-        txtResultado.innerHTML = numero + " Metro/s equivalen a " + resultado + "Kilometro/s";
+        txtResultado.innerHTML = numero + " Gramo/s equivalen a " + resultado + "Kilogramo/s";
     }
-    if (unidad1.value == "Metro" && unidad2.value== "Metro"){
+    if (unidad1.value == "Gramo" && unidad2.value== "Gramo"){
         resultado = numero * 1;
-        txtResultado.innerHTML = numero + " Metro/s equivalen a " + resultado + "Metro/s";
+        txtResultado.innerHTML = numero + " Gramo/s equivalen a " + resultado + "Gramo/s";
     }
-    if (unidad1.value == "Metro" && unidad2.value== "Centimetro"){
+    if (unidad1.value == "Gramo" && unidad2.value== "Centigramo"){
         resultado = numero * 100;
-        txtResultado.innerHTML = numero + " Metro/s equivalen a " + resultado + "Centimetro/s";
+        txtResultado.innerHTML = numero + " Gramo/s equivalen a " + resultado + "Centigramo/s";
     }
 
 
-    if (unidad1.value == "Centimetro" && unidad2.value== "Kilometro"){
+    if (unidad1.value == "Centigramo" && unidad2.value== "Kilogramo"){
         resultado = numero / 100000;
-        txtResultado.innerHTML = numero + " Centimetro/s equivalen a " + resultado + "Kilometros/s";
+        txtResultado.innerHTML = numero + " Centigramo/s equivalen a " + resultado + "Kilogramo/s";
     }
-    if (unidad1.value == "Centimetro" && unidad2.value== "Metro"){
+    if (unidad1.value == "Centigramo" && unidad2.value== "Gramo"){
         resultado = numero / 100;
-        txtResultado.innerHTML = numero + " Centimetro/s equivalen a " + resultado + "Metro/s";
+        txtResultado.innerHTML = numero + " Centigramo/s equivalen a " + resultado + "Gramo/s";
     }
-    if (unidad1.value == "Centimetro" && unidad2.value== "Centimetro"){
+    if (unidad1.value == "Centigramo" && unidad2.value== "Centigramo"){
         resultado = numero * 1;
-        txtResultado.innerHTML = numero + " Centimetro/s equivalen a " + resultado + "Centimetro/s";
+        txtResultado.innerHTML = numero + " Centigramo/s equivalen a " + resultado + "Centigramo/s";
     }
 }
