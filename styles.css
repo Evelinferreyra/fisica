@@ -1,8 +1,21 @@
-@import ;
+body {
+    margin: 0px;
+    padding: 0px;
+}
 
 .hv {
     text-align: center;
     font-family: 'Trebuchet MS';
+
+}
+
+.hv h2 {
+        color: rgb(44 49 46);
+    }
+
+.hv p {
+    float: bottom;
+
 }
 
 .titulo {
@@ -13,6 +26,38 @@
 
 header {
     padding: 40px;
-    margin: auto;
-    background-color: rgb(165, 238, 171);
+    margin-bottom: 100px;
+    background: linear-gradient(to right, rgb(212, 75, 190), rgb(120, 253, 131));
+}
+
+footer {
+    padding: 100px;
+    margin-top: 100px;
+    background: linear-gradient(to right, rgb(212, 75, 190), rgb(120, 253, 131));
+}
+
+.img {
+    align-items: center;
+    margin-left: 200px;
+    margin-right: 200px;
+
+}
+
+.imgl {
+    height: 120px;
+    width: 120px;
+}
+
+.imgv {
+    height: 120px;
+    width: 120px;
+    float: left;
+
+}
+
+.imgm {
+    height: 120px;
+    width: 120px;
+    float: right;
+
 }
