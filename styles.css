@@ -92,29 +92,28 @@ footer {
   
   .bubble {
     position: absolute;
-    bottom: -50px; /* Ajusta la posición inicial de las burbujas */
-    width: 50px; /* Ajusta el tamaño de las burbujas según sea necesario */
+    bottom: -50px; 
+    width: 50px;
     height: 50px;
-    background-color: #00bfff; /* Ajusta el color de las burbujas según sea necesario */
+    background-color: #00bfff; 
     border-radius: 50%;
     animation-name: bubble-rise;
-    animation-duration: 3s; /* Ajusta la duración de la animación */
-    animation-timing-function: linear; /* Ajusta la función de temporización de la animación */
+    animation-duration: 5s; 
+    animation-timing-function: linear; 
     animation-iteration-count: infinite;
   }
   
   @keyframes bubble-rise {
     0% {
-      bottom: -50px; /* Posición inicial de las burbujas */
-      opacity: 0.8; /* Ajusta la opacidad inicial de las burbujas según sea necesario */
+      bottom: -50px; 
+      opacity: 0.8; 
     }
     100% {
-      bottom: 100%; /* Posición final de las burbujas */
-      opacity: 0; /* Opacidad final de las burbujas */
+      bottom: 100%; 
+      opacity: 0;
     }
   }
   
-  /* Ajusta los estilos individuales de las burbujas si es necesario */
   .bubble1 {
     left: 20%;
     width: 60px;
