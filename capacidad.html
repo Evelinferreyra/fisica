@@ -1,40 +1,46 @@
 <!DOCTYPE html>
-<html lang="eS">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CONVERSOR DE MAGNITUDES:CAPACIDAD</title>
+    <title>Conversor de masa</title>
     <link rel="stylesheet" href="stylemagnitudes.css">
 </head>
 <body>
-    <div class="contenedor ">
-        <h2> unidades de volumen</h2>
+    <div class="contenedor">
+        <h2>Conversor de unidades de Masa</h2>
         <div class="fila">
-            <span> convertir de </span>
+            <span>Convertir de </span>
             <select name="unidad1" id="unidad1">
-                <option value="kilolitro">Kilolitro</option>
-                <option value="hectolitro">Hectolitro</option>
-                <option value="decalitro">Decalitro</option>
-                <option value="litro">Litro</option>
-                <option value="decilitro">Decilitro</option>
-                <option value="centilitro">Centilitro</option>
-                <option value="mililitro">Mililitro</option>
+                <option value="Kilolitro">Kilolitro</option>
+                <option value="Hectolitro">Hectolitro</option>
+                <option value="Decalitro">Decalitro</option>
+                <option value="Litro">Litro</option>
+                <option value="Decilitro">Decilitro</option>
+                <option value="Centilitro">Centilitro</option>
+                <option value="Mililitro">Mililitro</option>
             </select>
-            <span>a</span>
-            <select name="unidad2" id="">
-                <option value="kilolitro">Kilolitro</option>
-                <option value="hectolitro">Hectolitro</option>
-                <option value="decalitro">Decalitro</option>
-                <option value="litro">Litro</option>
-                <option value="decilitro">Decilitro</option>
-                <option value="centilitro">Centilitro</option>
-                <option value="mililitro">Mililitro</option>
+            <span> a </span>
+            <select name="unidad2" id="unidad2">
+                <option value="Kilolitro">Kilolitro</option>
+                <option value="Hectolitro">Hectolitro</option>
+                <option value="Decalitro">Decalitro</option>
+                <option value="Litro">Litro</option>
+                <option value="Decilitro">Decilitro</option>
+                <option value="Centilitro">Centilitro</option>
+                <option value="Mililitro">Mililitro</option>
             </select>
         </div>
-        <input type="number" id="a">
-        <div class="resultado" id="resultado"></div>
+
+        <input type="number" id="valor" placeholder="Valor">
+
+        <div class="resultado" id="resultado">
+            - -
+        </div>
+        
     </div>
-    <script src="capacidad.js"></script>   
+
+    <script src="capacidad.js"></script>
 </body>
 </html>
