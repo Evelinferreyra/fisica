@@ -181,9 +181,9 @@ footer {
 
 
 .hipervinculoanimacion img {
-  transition: transform 0.3s ease; /* Agrega una transición suave */
+  transition: transform 0.3s ease; 
 }
   
 .hipervinculoanimacion:hover img {
-  transform: scale(1.2); /* Escala la imagen al 120% */
+  transform: scale(1.2); 
 }
