@@ -28,7 +28,7 @@ select{
     width: 100%;
     margin: 10px 0;
     background-color: white;
-    color: rgb(204, 182, 182);
+    color: rgb(83, 39, 79);
     padding: 10px 0;
     font-size: 25px;
     border-radius: 5px;
@@ -55,6 +55,7 @@ header {
         margin-bottom: 100px;
         background: linear-gradient(to right, rgb(180, 13, 152), rgb(64, 238, 116));
     }
+
 
 
 .imgl {
