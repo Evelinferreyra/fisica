@@ -27,15 +27,14 @@ h1{
   color: #5bdb4a;
 }
 
+
 .text {
-  max-width: 600px;
+  flex: 1;
   padding-right: 20px;
-  flex: 3;
-  padding-right: 50px; 
 }
 
 img {
-  max-width: 100%;
+  max-width: 30%;
   height: auto;
 }
 
@@ -62,8 +61,8 @@ footer {
 
 .img {
     align-items: center;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 100px;
+    margin-right: 100px;
 
 }
 
@@ -213,5 +212,4 @@ footer {
   width: 100px;
   display: flex;
   justify-content: flex-end;
-  margin-left: 100%;
 }
