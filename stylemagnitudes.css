@@ -7,7 +7,7 @@ body {
 .contenedor{
     max-width: 500px;
     margin: auto;
-    background: linear-gradient(rgb(196, 55, 184), rgb(95, 235, 177));
+    background-color:  rgb(196, 55, 184);
     padding: 10px;
     text-align: center;
     font-size: 20px;
@@ -53,7 +53,7 @@ input{
 header {
         padding: 40px;
         margin-bottom: 100px;
-        background: linear-gradient(to right, rgb(180, 13, 152), rgb(64, 238, 116));
+        background-color: rgb(196, 55, 184);
     }
 
 
@@ -61,7 +61,7 @@ header {
 .imgl {
     height: 120px;
     width: 120px;
-    background: linear-gradient(rgb(135, 20, 163), rgb(122, 243, 237));
+    background-color: rgb(122, 243, 237);
     border-radius: 50%;
     width: 100px;
     height: 100px;
@@ -74,7 +74,7 @@ header {
     height: 120px;
     width: 120px;
     float: left;
-    background: linear-gradient(rgb(135, 20, 163), rgb(122, 243, 237));
+    background-color: rgb(122, 243, 237);
     border-radius: 50%;
     width: 100px;
     height: 100px;
@@ -87,7 +87,7 @@ header {
     height: 120px;
     width: 120px;
     float: right;
-    background: linear-gradient(rgb(135, 20, 163), rgb(122, 243, 237));
+    background-color: rgb(122, 243, 237);
     border-radius: 50%;
     width: 100px;
     height: 100px;
@@ -106,7 +106,7 @@ header {
 footer {
     padding: 100px;
     margin-top: 100px;
-    background: linear-gradient(to right, rgb(180, 13, 152), rgb(64, 238, 116));
+    background: linear-gradient(to right, rgb(122, 243, 237), rgb(196, 55, 184));
     position: relative;
 }
 
