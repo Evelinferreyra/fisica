@@ -26,7 +26,6 @@ header {
     width: 100%; /* Hacer la imagen responsive */
     max-width: 356px; /* Establecer un ancho máximo */
     height: auto; /* Ajustar la altura automáticamente */
-    margin-left: 80px; /* Ajustar el margen derecho */
     margin-bottom: 50px;
   }
 
@@ -71,10 +70,6 @@ header {
     margin-top: 5px; 
   }
 
-.text{
-  margin-left:70px;
-}
-  
 
 header h1 {
     text-align: center;
