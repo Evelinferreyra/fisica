@@ -2,78 +2,130 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conversor de masa</title>
+    <title>Física- ProA</title>
     <link rel="stylesheet" href="stylemagnitudes.css">
+    <script src="masa.js" defer></script>
+    <link rel="shortcut icon" href="./img/queso.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
 <body>
+    <header> 
+        <div class="container"> 
+            <div class="row"> 
+                <div class="col">
+                        <h1>Física</h1>
+                </div> 
+                
+                <nav>
+                </nav>
 
-    <header>
-        <section class="hv">
-            <h2>Seleccione su magnitud: </h2>
-            <div class="img">
-                <div class="circulo">
-                    <a href="index.html" class="hipervinculoanimacion">
-                        <img src="img/home.ico" class="imgm">
-                    
-                    </a>
-                
-                    <a href="longitud.html" class="hipervinculoanimacion">
-                        <img src="img/longitud.avif" class="imgl">
-                    
-                    </a>
-                
-                
-                    <a href="capacidad.html" class="hipervinculoanimacion">
-                        <img src="img/volumen.png" class="imgv">
-                        
-                    </a>
-                </div>
+            </div> 
+        </div>
     </header>
-    <div class="contenedor">
-        <h2>Conversor de unidades de Masa</h2>
-        <div class="fila">
-            <span>Convertir de </span>
-            <select name="unidad1" id="unidad1">
-                <option value="Kilogramo">Kilogramo</option>
-                <option value="Hectogramo">Hectogramo</option>
-                <option value="Decagramo">Decagramo</option>
-                <option value="Gramo">Gramo</option>
-                <option value="Decigramo">Decigramo</option>
-                <option value="Centigramo">Centigramo</option>
-                <option value="Miligramo">Miligramo</option>
-            </select>
-            <span> a </span>
-            <select name="unidad2" id="unidad2">
-                <option value="Kilogramo">Kilogramo</option>
-                <option value="Hectogramo">Hectogramo</option>
-                <option value="Decagramo">Decagramo</option>
-                <option value="Gramo">Gramo</option>
-                <option value="Decigramo">Decigramo</option>
-                <option value="Centigramo">Centigramo</option>
-                <option value="Miligramo">Miligramo</option>
-            </select>
-        </div>
 
-        <input type="number" id="valor" placeholder="Valor">
+    <main>
+        <section class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="text">
+                        <h1>¿Qué es la MASA?</h1>
+                        <p>La masa es la cantidad de materia que posee un cuerpo u objeto.</p>
 
-        <div class="resultado" id="resultado">
-            - -
-        </div>
+                        <p>Para pasar de una unidad a otra menor multiplicamos por 10 tantas veces como unidades de
+                            medida la separan. Para pasar de una unidad a otra mayor dividimos por 10 tantas veces como
+                            unidades de medida la separan.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <img src="./img/mmasa.jpg" class="right-image" alt="Imagen derecha">
+                    <br>
+                </div>
+
+                <div class="col-sm-6">
+                    <p class="htext">Puedes utilizar el siguiente conversor para verificar si tu resultado es correcto</p>
+                    <div class="contenedor1">
+                        <div class="fila">
+                            <h2>Conversor de unidades de Masa</h2>
+                            <span>Convertir de </span>
+                            <select name="unidad1" id="unidad1">
+                                <option value="Kilogramo">Kilogramo</option>
+                                <option value="Hectogramo">Hectogramo</option>
+                                <option value="Decagramo">Decagramo</option>
+                                <option value="Gramo">Gramo</option>
+                                <option value="Decigramo">Decigramo</option>
+                                <option value="Centigramo">Centigramo</option>
+                                <option value="Miligramo">Miligramo</option>
+                            </select>
+                            <span> a </span>
+                            <select name="unidad2" id="unidad2">
+                                <option value="Kilogramo">Kilogramo</option>
+                                <option value="Hectogramo">Hectogramo</option>
+                                <option value="Decagramo">Decagramo</option>
+                                <option value="Gramo">Gramo</option>
+                                <option value="Decigramo">Decigramo</option>
+                                <option value="Centigramo">Centigramo</option>
+                                <option value="Miligramo">Miligramo</option>
+                            </select>
+                        </div>
+                        <input type="number" id="valor" placeholder="Valor">
         
-    </div>
+                        <div class="resultado" id="resultado">
+                            --
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <h2>Seleccione una magnitud:</h2>
+                    <br>
+                    <div class="img">
+                        <div class="magnitud">
+                            <a href="index.html" class="hipervinculoanimacion button-wrapper">
+                                <img src="./img/home.ico" class="imgm">
+                            </a>
+                            <p class="nombres">Inicio</p>
+                        </div>
+                        
+                        <div class="magnitud">
+                            <a href="longitud.html" class="hipervinculoanimacion button-wrapper">
+                                <img src="img/longitud.avif" class="imgl">
+                            </a>
+                            <p class="nombres">Longitud</p>
+                        </div>
+                        
+                        <div class="magnitud">
+                            <a href="capacidad.html" class="hipervinculoanimacion button-wrapper">
+                                <img src="img/volumen.png" class="imgv">
+                            </a>
+                            <p class="nombres">Capacidad</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer>
-        <div class="bubbles">
-            <div class="bubble bubble1"></div>
-            <div class="bubble bubble2"></div>
-            <div class="bubble bubble3"></div>
-            <div class="bubble bubble4"></div>
-            <div class="bubble bubble5"></div>
+        <div class="content">
+            <div class="bubbles">
+                <div class="bubble bubble1"></div>
+                <div class="bubble bubble2"></div>
+                <div class="bubble bubble3"></div>
+                <div class="bubble bubble4"></div>
+                <div class="bubble bubble5"></div>
+            </div>
+            <div class="contenedor">
+                <div class="copyright">
+                    <p> 5to Año <span>&copy;</span> 2023 ProA La Falda - Team Queso</p>
+                </div>
+                <img src="./img/logoproa.png" class="LOGO">
+            </div>
         </div>
     </footer>
-
-    <script src="masa.js"></script>
 </body>
 </html>

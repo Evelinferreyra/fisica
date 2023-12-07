@@ -2,77 +2,133 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conversor de longitudes</title>
+    <title>Física - ProA</title>
     <link rel="stylesheet" href="stylemagnitudes.css">
+    <script src="longitudscript.js" defer></script>
+    <link rel="shortcut icon" href="./img/queso.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
 <body>
-    <header>
-        <section class="hv">
-            <h2>Seleccione su magnitud: </h2>
-            <div class="img">
-                <div class="circulo">
-                    <a href="masa.html" class="hipervinculoanimacion">
-                        <img src="img/masa.avif" class="imgm">
+    <header> 
+        <div class="container"> 
+            <div class="row"> 
+                <div class="col">
+                        <h1>Física</h1>
+                </div> 
                 
-                    </a>
-                
-                
-                    <a href="index.html" class="hipervinculoanimacion">
-                        <img src="img/home.ico" class="imgl">
-                    
-                    </a>
-                
-                
-                    <a href="capacidad.html" class="hipervinculoanimacion">
-                        <img src="img/volumen.png" class="imgv">
-                        
-                    </a>
-                </div>
+                <nav>
+                </nav>
+
+            </div> 
+        </div>
     </header>
-    <div class="contenedor">
-        <h2>Conversor de unidades de longitud</h2>
-        <div class="fila">
-            <span>Convertir de </span>
-            <select name="unidad1" id="unidad1">
-                <option value="Kilometro">Kilómetro</option>
-                <option value="Hectometro">Hectómetro</option>
-                <option value="Decametro">Decámetro</option>
-                <option value="Metro">Metro</option>
-                <option value="Decimetro">Decímetro</option>
-                <option value="Centimetro">Centímetro</option>
-                <option value="Milimetro">Milímetro</option>
-            </select>
-            <span> a </span>
-            <select name="unidad2" id="unidad2">
-                <option value="Kilometro">Kilómetro</option>
-                <option value="Hectometro">Hectómetro</option>
-                <option value="Decametro">Decámetro</option>
-                <option value="Metro">Metro</option>
-                <option value="Decimetro">Decímetro</option>
-                <option value="Centimetro">Centímetro</option>
-                <option value="Milimetro">Milímetro</option>
-            </select>
-        </div>
 
-        <input type="number" id="valor" placeholder="Valor">
+    <main>
+        <section class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="text">
+                        <h1>¿Qué es LONGITUD?</h1>
+                        <p>Podemos definir a la longitud como la distancia comprendida entre dos puntos.</p>
 
-        <div class="resultado" id="resultado">
-            - -
-        </div>
-        
-    </div>
+                        <p>Para pasar de una unidad a otra menor multiplicamos por 10 tantas veces como unidades de
+                            medida la separan. Para pasar de una unidad a otra mayor dividimos por 10 tantas veces como
+                            unidades de medida la separan.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <img src="./img/llongitud.png" class="right-image" alt="Imagen derecha">
+                    <br>
+                </div>
+
+                <div class="col-sm-6 ">
+                    <div class="conversor-container">
+                        <p class="htext">Puedes utilizar el siguiente conversor para verificar si tu resultado es correcto</p>
+                    <div class="contenedor1">
+                        <h2>Conversor de unidades de longitud</h2>
+                        <div class="fila">
+                            <span>Convertir de </span>
+                            <select name="unidad1" id="unidad1">
+                                <option value="Kilometro">Kilómetro</option>
+                                <option value="Hectometro">Hectómetro</option>
+                                <option value="Decametro">Decámetro</option>
+                                <option value="Metro">Metro</option>
+                                <option value="Decimetro">Decímetro</option>
+                                <option value="Centimetro">Centímetro</option>
+                                <option value="Milimetro">Milímetro</option>
+                            </select>
+                            <span> a </span>
+                            <select name="unidad2" id="unidad2">
+                                <option value="Kilometro">Kilómetro</option>
+                                <option value="Hectometro">Hectómetro</option>
+                                <option value="Decametro">Decámetro</option>
+                                <option value="Metro">Metro</option>
+                                <option value="Decimetro">Decímetro</option>
+                                <option value="Centimetro">Centímetro</option>
+                                <option value="Milimetro">Milímetro</option>
+                            </select>
+                        </div>
+                
+                        <input type="number" id="valor" placeholder="Valor">
+                
+                        <div class="resultado" id="resultado">
+                            - -
+                        </div>
+                        
+                    </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <h2>Seleccione una magnitud:</h2>
+                    <br>
+                    <div class="img">
+                        <div class="magnitud">
+                            <a href="./masa.html" class="hipervinculoanimacion button-wrapper">
+                                <img src="./img/masa.avif" class="imgm">
+                            </a>
+                            <p class="nombres">Masa</p>
+                        </div>
+                        
+                        <div class="magnitud">
+                            <a href="index.html" class="hipervinculoanimacion button-wrapper">
+                                <img src="./img/home.ico" class="imgl">
+                            </a>
+                            <p class="nombres">Inicio</p>
+                        </div>
+                        
+                        <div class="magnitud">
+                            <a href="capacidad.html" class="hipervinculoanimacion button-wrapper">
+                                <img src="img/volumen.png" class="imgv">
+                            </a>
+                            <p class="nombres">Capacidad</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
     <footer>
-        <div class="bubbles">
-            <div class="bubble bubble1"></div>
-            <div class="bubble bubble2"></div>
-            <div class="bubble bubble3"></div>
-            <div class="bubble bubble4"></div>
-            <div class="bubble bubble5"></div>
+        <div class="content">
+            <div class="bubbles">
+                <div class="bubble bubble1"></div>
+                <div class="bubble bubble2"></div>
+                <div class="bubble bubble3"></div>
+                <div class="bubble bubble4"></div>
+                <div class="bubble bubble5"></div>
+            </div>
+            <div class="contenedor">
+                <div class="copyright">
+                    <p> 5to Año <span>&copy;</span> 2023 ProA La Falda - Team Queso</p>
+                </div>
+                <img src="./img/logoproa.png" class="LOGO">
+            </div>
         </div>
     </footer>
-
-    <script src="longitudscript.js"></script>
 </body>
 </html>

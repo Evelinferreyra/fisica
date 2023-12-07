@@ -1,222 +1,80 @@
-var valor = document.getElementById("valor");
-valor.addEventListener('keyup', convertir);
-txtResultado = document.getElementById("resultado");
+// script.js
 
-unidad1 = document.getElementById("unidad1");
-unidad1.addEventListener('change', convertir);
+document.addEventListener('DOMContentLoaded', function () {
+  // Función para realizar la conversión de unidades
+  function convertirUnidades() {
+      // Obtener los valores seleccionados
+      const unidad1 = document.getElementById('unidad1').value;
+      const unidad2 = document.getElementById('unidad2').value;
+      const valor = parseFloat(document.getElementById('valor').value);
 
-unidad2 = document.getElementById("unidad2");
-unidad2.addEventListener('change', convertir);
+      // Realizar la conversión
+      let resultado = valor;
 
-var resultado;
+      // Lógica de conversión (agrega más casos según sea necesario)
+      switch (unidad1) {
+          case 'Kilogramo':
+              resultado *= 1000;
+              break;
+          case 'Hectogramo':
+              resultado *= 100;
+              break;
+          case 'Decagramo':
+              resultado *= 10;
+              break;
+          case 'gramo':
+              // No es necesario hacer nada
+              break;
+          case 'Decigramo':
+              resultado /= 10;
+              break;
+          case 'Centigramo':
+              resultado /= 100;
+              break;
+          case 'Miligramo':
+              resultado /= 1000;
+              break;
+          default:
+              console.error('Unidad no reconocida');
+              break;
+      }
 
-function convertir(){
-    if (valor.value == ''){
-        return; 
-    }
-  numero = valor.value;
-  numero = parseFloat(numero);
+      switch (unidad2) {
+          case 'Kilogramo':
+              resultado /= 1000;
+              break;
+          case 'Hectogramo':
+              resultado /= 100;
+              break;
+          case 'Decagramo':
+              resultado /= 10;
+              break;
+          case 'gramo':
+              // No es necesario hacer nada
+              break;
+          case 'Decigramo':
+              resultado *= 10;
+              break;
+          case 'Centigramo':
+              resultado *= 100;
+              break;
+          case 'Miligramo':
+              resultado *= 1000;
+              break;
+          default:
+              console.error('Unidad no reconocida');
+              break;
+      }
 
-  if (unidad1.value == "Kilogramo" && unidad2.value == "Kilogramo") {
-    resultado = numero * 1;
-    txtResultado.innerHTML = numero + " Kilogramos equivalen a " + resultado + " Kilogramos";
-  }
-  if (unidad1.value == "Kilogramo" && unidad2.value == "Hectogramo") {
-    resultado = numero * 10;
-    txtResultado.innerHTML = numero + " Kilogramos equivalen a " + resultado + " Hectogramos";
-  }
-  if (unidad1.value == "Kilogramo" && unidad2.value == "Decagramo") {
-    resultado = numero * 100;
-    txtResultado.innerHTML = numero + " Kilogramos equivalen a " + resultado + " Decagramos";
-  }
-  if (unidad1.value == "Kilogramo" && unidad2.value == "Gramo") {
-    resultado = numero * 1000;
-    txtResultado.innerHTML = numero + " Kilogramos equivalen a " + resultado + " Gramos";
-  }
-  if (unidad1.value == "Kilogramo" && unidad2.value == "Decigramo") {
-    resultado = numero * 10000;
-    txtResultado.innerHTML = numero + " Kilogramos equivalen a " + resultado + " Decigramos";
-  }
-  if (unidad1.value == "Kilogramo" && unidad2.value == "Centigramo") {
-    resultado = numero * 100000;
-    txtResultado.innerHTML = numero + " Kilogramos equivalen a " + resultado + " Centigramos";
-  }
-  if (unidad1.value == "Kilogramo" && unidad2.value == "Miligramo") {
-    resultado = numero * 1000000;
-    txtResultado.innerHTML = numero + " Kilogramos equivalen a " + resultado + " Miligramos";
-  }
-
-  if (unidad1.value == "Hectogramo" && unidad2.value == "Kilogramo") {
-    resultado = numero / 10;
-    txtResultado.innerHTML = numero + " Hectogramos equivalen a " + resultado + " Kilogramos";
-  }
-  if (unidad1.value == "Hectogramo" && unidad2.value == "Hectogramo") {
-    resultado = numero * 1;
-    txtResultado.innerHTML = numero + " Hectogramos equivalen a " + resultado + " Hectogramos";
-  }
-  if (unidad1.value == "Hectogramo" && unidad2.value == "Decagramo") {
-    resultado = numero * 10;
-    txtResultado.innerHTML = numero + " Hectogramos equivalen a " + resultado + " Decagramos";
-  }
-  if (unidad1.value == "Hectogramo" && unidad2.value == "Gramo") {
-    resultado = numero * 100;
-    txtResultado.innerHTML = numero + " Hectogramos equivalen a " + resultado + " Gramos";
-  }
-  if (unidad1.value == "Hectogramo" && unidad2.value == "Decigramo") {
-    resultado = numero * 1000;
-    txtResultado.innerHTML = numero + " Hectogramos equivalen a " + resultado + "Decigramo";
-  }
-  if (unidad1.value == "Hectogramo" && unidad2.value == "Centigramo") {
-    resultado = numero * 10000;
-    txtResultado.innerHTML = numero + " Hectogramos equivalen a " + resultado + "Centigramo";
-  }
-  if (unidad1.value == "Hectogramo" && unidad2.value == "Miligramo") {
-    resultado = numero * 10000;
-    txtResultado.innerHTML = numero + " Hectogramos equivalen a " + resultado + "Centigramo";
+      // Mostrar el resultado
+      document.getElementById('resultado').innerText = resultado.toFixed(2);
   }
 
-  if (unidad1.value == "Decagramo" && unidad2.value == "Kilogramo") {
-    resultado = numero / 100;
-    txtResultado.innerHTML = numero + " Hectogramos equivalen a " + resultado + " Kilogramos";
-  }
-  if (unidad1.value == "Decagramo" && unidad2.value == "Hectogramo") {
-    resultado = numero / 10;
-    txtResultado.innerHTML = numero + " Hectogramos equivalen a " + resultado + " Hectogramos";
-  }
-  if (unidad1.value == "Decagramo" && unidad2.value == "Decagramo") {
-    resultado = numero * 1;
-    txtResultado.innerHTML = numero + " Hectogramos equivalen a " + resultado + " Decagramos";
-  }
-  if (unidad1.value == "Decagramo" && unidad2.value == "Gramo") {
-    resultado = numero * 10;
-    txtResultado.innerHTML = numero + " Hectogramos equivalen a " + resultado + " Gramos";
-  }
-  if (unidad1.value == "Decagramo" && unidad2.value == "Decigramo") {
-    resultado = numero * 100;
-    txtResultado.innerHTML = numero + " Hectogramos equivalen a " + resultado + "Decigramo";
-  }
-  if (unidad1.value == "Decagramo" && unidad2.value == "Centigramo") {
-    resultado = numero * 1000;
-    txtResultado.innerHTML = numero + " Hectogramos equivalen a " + resultado + "Centigramo";
-  }
-  if (unidad1.value == "Decagramo" && unidad2.value == "Miligramo") {
-    resultado = numero * 10000;
-    txtResultado.innerHTML = numero + " Hectogramos equivalen a " + resultado + "Centigramo";
-  }
+  // Agregar un evento de cambio a los selectores y al input
+  document.getElementById('unidad1').addEventListener('change', convertirUnidades);
+  document.getElementById('unidad2').addEventListener('change', convertirUnidades);
+  document.getElementById('valor').addEventListener('input', convertirUnidades);
 
-  if (unidad1.value == "Gramo" && unidad2.value == "Kilogramo") {
-    resultado = numero / 1000;
-    txtResultado.innerHTML = numero + " Hectogramos equivalen a " + resultado + " Kilogramos";
-  }
-  if (unidad1.value == "Gramo" && unidad2.value == "Hectogramo") {
-    resultado = numero / 100;
-    txtResultado.innerHTML = numero + " Hectogramos equivalen a " + resultado + " Hectogramos";
-  }
-  if (unidad1.value == "Gramo" && unidad2.value == "Decagramo") {
-    resultado = numero / 10;
-    txtResultado.innerHTML = numero + " Hectogramos equivalen a " + resultado + " Decagramos";
-  }
-  if (unidad1.value == "Gramo" && unidad2.value == "Gramo") {
-    resultado = numero * 1;
-    txtResultado.innerHTML = numero + " Hectogramos equivalen a " + resultado + " Gramos";
-  }
-  if (unidad1.value == "Gramo" && unidad2.value == "Decigramo") {
-    resultado = numero * 10;
-    txtResultado.innerHTML = numero + " Hectogramos equivalen a " + resultado + "Decigramo";
-  }
-  if (unidad1.value == "Gramo" && unidad2.value == "Centigramo") {
-    resultado = numero * 100;
-    txtResultado.innerHTML = numero + " Hectogramos equivalen a " + resultado + "Centigramo";
-  }
-  if (unidad1.value == "Gramo" && unidad2.value == "Miligramo") {
-    resultado = numero * 1000;
-    txtResultado.innerHTML = numero + " Hectogramos equivalen a " + resultado + "Centigramo";
-  }
-
-  if (unidad1.value == "Decigramo" && unidad2.value == "Kilogramo") {
-    resultado = numero / 10000;
-    txtResultado.innerHTML = numero + " Hectogramos equivalen a " + resultado + " Kilogramos";
-  }
-  if (unidad1.value == "Decigramo" && unidad2.value == "Hectogramo") {
-    resultado = numero / 1000;
-    txtResultado.innerHTML = numero + " Hectogramos equivalen a " + resultado + " Hectogramos";
-  }
-  if (unidad1.value == "Decigramo" && unidad2.value == "Decagramo") {
-    resultado = numero / 100;
-    txtResultado.innerHTML = numero + " Hectogramos equivalen a " + resultado + " Decagramos";
-  }
-  if (unidad1.value == "Decigramo" && unidad2.value == "Gramo") {
-    resultado = numero / 10;
-    txtResultado.innerHTML = numero + " Hectogramos equivalen a " + resultado + " Gramos";
-  }
-  if (unidad1.value == "Decigramo" && unidad2.value == "Decigramo") {
-    resultado = numero * 1;
-    txtResultado.innerHTML = numero + " Hectogramos equivalen a " + resultado + "Decigramo";
-  }
-  if (unidad1.value == "Decigramo" && unidad2.value == "Centigramo") {
-    resultado = numero * 10;
-    txtResultado.innerHTML = numero + " Hectogramos equivalen a " + resultado + "Centigramo";
-  }
-  if (unidad1.value == "Decigramo" && unidad2.value == "Miligramo") {
-    resultado = numero * 100;
-    txtResultado.innerHTML = numero + " Hectogramos equivalen a " + resultado + "Centigramo";
-  }
-
-  if (unidad1.value == "Centigramo" && unidad2.value == "Kilogramo") {
-    resultado = numero / 100000;
-    txtResultado.innerHTML = numero + " Hectogramos equivalen a " + resultado + " Kilogramos";
-  }
-  if (unidad1.value == "Centigramo" && unidad2.value == "Hectogramo") {
-    resultado = numero / 10000;
-    txtResultado.innerHTML = numero + " Hectogramos equivalen a " + resultado + " Hectogramos";
-  }
-  if (unidad1.value == "Centigramo" && unidad2.value == "Decagramo") {
-    resultado = numero / 1000;
-    txtResultado.innerHTML = numero + " Hectogramos equivalen a " + resultado + " Decagramos";
-  }
-  if (unidad1.value == "Centigramo" && unidad2.value == "Gramo") {
-    resultado = numero / 100;
-    txtResultado.innerHTML = numero + " Hectogramos equivalen a " + resultado + " Gramos";
-  }
-  if (unidad1.value == "Centigramo" && unidad2.value == "Decigramo") {
-    resultado = numero / 10;
-    txtResultado.innerHTML = numero + " Hectogramos equivalen a " + resultado + "Decigramo";
-  }
-  if (unidad1.value == "Centigramo" && unidad2.value == "Centigramo") {
-    resultado = numero * 1;
-    txtResultado.innerHTML = numero + " Hectogramos equivalen a " + resultado + "Centigramo";
-  }
-  if (unidad1.value == "Centigramo" && unidad2.value == "Miligramo") {
-    resultado = numero * 10;
-    txtResultado.innerHTML = numero + " Hectogramos equivalen a " + resultado + "Centigramo";
-  }
-
-  if (unidad1.value == "Miligramo" && unidad2.value == "Kilogramo") {
-    resultado = numero / 1000000;
-    txtResultado.innerHTML = numero + " Hectogramos equivalen a " + resultado + " Kilogramos";
-  }
-  if (unidad1.value == "Miligramo" && unidad2.value == "Hectogramo") {
-    resultado = numero / 100000;
-    txtResultado.innerHTML = numero + " Hectogramos equivalen a " + resultado + " Hectogramos";
-  }
-  if (unidad1.value == "Miligramo" && unidad2.value == "Decagramo") {
-    resultado = numero / 10000;
-    txtResultado.innerHTML = numero + " Hectogramos equivalen a " + resultado + " Decagramos";
-  }
-  if (unidad1.value == "Miligramo" && unidad2.value == "Gramo") {
-    resultado = numero / 1000;
-    txtResultado.innerHTML = numero + " Hectogramos equivalen a " + resultado + " Gramos";
-  }
-  if (unidad1.value == "Miligramo" && unidad2.value == "Decigramo") {
-    resultado = numero / 100;
-    txtResultado.innerHTML = numero + " Hectogramos equivalen a " + resultado + "Decigramo";
-  }
-  if (unidad1.value == "Miligramo" && unidad2.value == "Centigramo") {
-    resultado = numero / 10;
-    txtResultado.innerHTML = numero + " Hectogramos equivalen a " + resultado + "Centigramo";
-  }
-  if (unidad1.value == "Miligramo" && unidad2.value == "Miligramo") {
-    resultado = numero * 1;
-    txtResultado.innerHTML = numero + " Hectogramos equivalen a " + resultado + "Centigramo";
-  }
-}
+  // Llamar a la función inicialmente para mostrar un resultado predeterminado
+  convertirUnidades();
+});
