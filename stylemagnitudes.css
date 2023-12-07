@@ -36,7 +36,7 @@ body {
 }
 
 .valor{
-  width: 80%;
+  width: 50%;
 }
 
 .htext{
@@ -86,6 +86,7 @@ header {
 
 .text{
   margin: 40px;
+  margin-left: 40px;
 }
 
 .right-image {
