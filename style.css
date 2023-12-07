@@ -22,12 +22,21 @@ header {
   font-size: 3em;
 }
 
-  .right-image {
-    width: 100%; /* Hacer la imagen responsive */
-    max-width: 356px; /* Establecer un ancho máximo */
-    height: auto; /* Ajustar la altura automáticamente */
-    margin-bottom: 50px;
-  }
+main {
+  padding: 20px; /* Añade relleno alrededor de los elementos dentro de main */
+}
+
+.text {
+  margin: 70px; /* Añade margen alrededor del bloque de texto */
+}
+
+.right-image {
+  width: 100%; /* Hacer la imagen responsive */
+  max-width: 356px; /* Establecer un ancho máximo */
+  height: auto; /* Ajustar la altura automáticamente */
+  margin: 20px 0; /* Añade margen en la parte superior e inferior de la imagen */
+}
+
 
 .img {
   display: flex;

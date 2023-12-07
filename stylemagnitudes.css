@@ -17,7 +17,7 @@ body {
   margin-bottom: 40px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   .row {
       display: flex;
       flex-wrap: wrap;
@@ -33,6 +33,10 @@ body {
   .conversor-container {
       text-align: center;
   }
+}
+
+.valor{
+  width: 80%;
 }
 
 .htext{
@@ -80,6 +84,10 @@ header {
   font-size: 3em;
 }
 
+.text{
+  margin: 40px;
+}
+
 .right-image {
   width: 100%; /* Hacer la imagen responsive */
   max-width: 500px; /* Establecer un ancho máximo */
@@ -87,7 +95,6 @@ header {
   margin-right: 20px; /* Ajustar el margen derecho */
   margin-bottom: 30px;
 }
-
 
 
 .img img {
@@ -177,9 +184,6 @@ footer {
   text-align: center;
 }
 
-.text{
-  margin-left:40px;
-}
 
 .bubbles {
   position: absolute;
