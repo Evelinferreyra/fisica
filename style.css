@@ -27,7 +27,8 @@ main {
 }
 
 .text {
-  margin: 70px; /* Añade margen alrededor del bloque de texto */
+  margin-right: 30px;
+  margin-left: 80px;
 }
 
 .right-image {
